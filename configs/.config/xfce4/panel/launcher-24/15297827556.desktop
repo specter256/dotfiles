@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=SmartGit
+Keywords=git
+Comment=Git-Client
+Type=Application
+Categories=Development;RevisionControl
+Terminal=false
+StartupNotify=true
+StartupWMClass=SmartGit
+Exec="/home/void/Документы/smartgit/bin/smartgit.sh" %u
+MimeType=x-scheme-handler/git;x-scheme-handler/smartgit;x-scheme-handler/sourcetree;
+Icon=syntevo-smartgit.png
+X-XFCE-Source=file:///home/void/.local/share/applications/syntevo-smartgit.desktop

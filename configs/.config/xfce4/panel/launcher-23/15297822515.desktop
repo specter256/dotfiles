@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=sublime
+Comment=
+Exec=/home/void/Документы/sublime_text_3/sublime_text
+Icon=/home/void/Документы/sublime_text_3/Icon/48x48/sublime-text.png
+Path=
+Terminal=false
+StartupNotify=false

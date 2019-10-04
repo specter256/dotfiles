@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Name=Telegram Desktop
+Comment=Official desktop application for the Telegram messaging service
+TryExec=/home/void/Документы/Telegram/Telegram
+Exec=/home/specter/Documents/Telegram/Telegram -- %u
+Icon=telegram
+Terminal=false
+StartupWMClass=TelegramDesktop
+Type=Application
+Categories=Network;InstantMessaging;Qt;
+MimeType=x-scheme-handler/tg;
+X-Desktop-File-Install-Version=0.23
+X-XFCE-Source=file:///home/void/.local/share/applications/telegramdesktop.desktop
+Path=
+StartupNotify=false

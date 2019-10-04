@@ -1,0 +1,34 @@
+[Desktop Entry]
+Version=1.0
+Name=Chromium Web Browser
+Name[ru]=Веб-браузер Chromium
+GenericName=Web Browser
+GenericName[ru]=Веб-браузер
+Comment=Access the Internet
+Comment[ru]=Доступ в Интернет
+Exec=chromium-browser %U
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=chromium-browser
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;
+StartupNotify=true
+Actions=NewWindow;Incognito;TempProfile;
+X-AppInstall-Package=chromium-browser
+X-XFCE-Source=file:///usr/share/applications/chromium-browser.desktop
+
+[Desktop Action NewWindow]
+Name=Open a New Window
+Name[ru]=Открыть новое окно
+Exec=chromium-browser
+
+[Desktop Action Incognito]
+Name=Open a New Window in incognito mode
+Name[ru]=Открыть новое окно в режиме инкогнито
+Exec=chromium-browser --incognito
+
+[Desktop Action TempProfile]
+Name=Open a New Window with a temporary profile
+Name[ru]=Открыть новое окно с временным профилем
+Exec=chromium-browser --temp-profile
