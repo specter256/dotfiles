@@ -22,8 +22,8 @@ set mat=2
 " show tabs and trailing spaces
 set list listchars=tab:>·,trail:·
 
-" enable mouse
-set mouse=a
+" disable mouse
+set mouse-=a
 
 " increase history
 set history=1000
