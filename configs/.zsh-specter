@@ -1,0 +1,11 @@
+# aliases
+alias vim='nvim'
+alias vi='nvim'
+alias //='ssh'
+
+# functions
+# generate angular module and component
+nggm() {
+  ng g m $1
+  ng g c $1 --skip-tests=true -m=$1 --style scss
+}
