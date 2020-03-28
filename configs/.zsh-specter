@@ -9,3 +9,7 @@ nggm() {
   ng g m $1
   ng g c $1 --skip-tests=true -m=$1 --style scss
 }
+
+nggc() {
+  ng g c $1 --skip-tests=true --style scss
+}
