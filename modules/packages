@@ -9,7 +9,7 @@ conky
 aptitude
 git
 unrar
-qt4-qtconfig
+mc
 zsh
 openjdk-8-jdk
 curl
