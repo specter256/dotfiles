@@ -13,3 +13,9 @@ nggm() {
 nggc() {
   ng g c $1 --skip-tests=true --style scss
 }
+
+run() {
+  echo 'Starting $1...'
+  sh ~/src/run-$1.sh
+}
+
