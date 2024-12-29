@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# header
+toilet --termwidth --filter border --gay --font future -k "$HOSTNAME"
+echo ""
+
+# display distribution name
+echo "$(lsb_release -ds)"
+
+# display kernel version
+echo "$(uname -srm)"
+
+echo ""
+
+# display cpu/mem usage
+cpuUsage=$(top -bn1 | awk '/Cpu/{printf "%d%%", $2}')
+memUsage=$(free -m | awk '/Mem:/{printf "%.0f%% (%dM/%dM)", ($3/$2*100), $3, $2}')
+echo "CPU Usage: $cpuUsage"
+echo "Memory Usage: $memUsage"
+
+# display disk usage
+diskUsage="$(df -h --total | grep -E "^total")"
+du=($diskUsage)
+echo "Disk Usage: ${du[4]} (${du[2]} / ${du[1]})"
